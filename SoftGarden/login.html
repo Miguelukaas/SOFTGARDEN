@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guarderia-Login</title>
+    <link rel="stylesheet" href="CSS/estiloLogin.css">
+</head>
+<body>
+    <div class="container">
+        <form class="login-form" action="acceso.php" method="post">
+            <img src="images/LOGOTIPOSOFTGARDEN.png" width="200" height="200" alt="Logotipo de SOFTGARDEN" title="Logotipo de SoftGarden">
+            
+            <h3>Iniciar Sesión</h3>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+            <button type="submit" name="iniciar_sesion">Iniciar Sesión</button>
+        </form>
+        <div class="register-section">
+            <p style="color: white;">¿No tienes una cuenta? <a href="#" class="register-link">Regístrate aquí</a></p>
+            <form class="register-form hidden" action="save_user.php" method="post">
+                <h4>Registro</h4>
+                <label for="usuario_registro">Usuario:</label>
+                <input type="text" id="usuario_registro" name="usuario" placeholder="Usuario" required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="Correo electrónico" required>
+                <label for="contrasena_registro">Contraseña:</label>
+                <input type="password" id="contrasena_registro" name="contrasena" placeholder="Contraseña" required>
+                <button type="submit" name="guardar_usr">Registrarse</button>
+            </form>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+</html>
