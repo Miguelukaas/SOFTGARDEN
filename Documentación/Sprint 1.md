@@ -30,7 +30,43 @@ Crear una aplicación móvil o web que facilite a los padres la entrada de datos
 ------------
 
 - **Microservicio de Sueño Uriel Beltrán**
+1. Base de Datos Relacional: Útil para llevar un registro detallado y estructurado de los patrones de sueño, con relaciones claras entre las entradas de sueño y el bebé correspondiente.
 
+2. Modelado de la Base de Datos
+Bebé (baby)
+ID (Primary Key)
+Nombre
+Fecha de nacimiento
+Datos adicionales (padres, grupo sanguíneo, etc.)
+
+Patrón de Sueño (sleep_pattern)
+ID (Primary Key)
+ID del Bebé (Foreign Key)
+Fecha
+Hora de inicio del sueño
+Hora de fin del sueño
+Observaciones (e.g., inquieto, tranquilo, etc.)
+Esto permite establecer relaciones claras entre cada entrada de sueño y el bebé correspondiente.
+
+3. Endpoints del Microservicio
+Crear Bebé: Endpoint para registrar un nuevo bebé en la base de datos.
+Registrar Patrón de Sueño: Endpoint para registrar una nueva entrada de sueño asociada a un bebé específico.
+Obtener Patrones de Sueño por Bebé: Endpoint para obtener todos los patrones de sueño de un bebé en particular.
+Actualizar o Eliminar Entradas: Endpoints para modificar o eliminar registros existentes.
+
+4. Tecnologías y Herramientas
+Base de Datos Relacional: MySQL.
+ORM: Puede usarse un ORM como SQLAlchemy (para Python) o Hibernate (para Java) para manejar las operaciones de la base de datos.
+API REST: Framework como Flask, Django (Python), o Spring Boot (Java) para desarrollar la API que exponga los endpoints.
+
+5. Consideraciones de Seguridad
+Autenticación y Autorización: Asegurarse de que solo el personal autorizado pueda acceder o modificar los registros.
+Backup y Recuperación: Implementar un sistema de backups regulares para proteger los datos.
+Encriptación de Datos: Encriptar datos sensibles como información personal de los bebés.
+
+7. Escalabilidad
+Sharding: Dividir la base de datos en fragmentos más pequeños para manejar grandes volúmenes de datos si es necesario.
+Replicación: Implementar replicación de bases de datos para alta disponibilidad.
 ------------
 
 - **Microservicio de Salud y Bienestar Lizbeth Cortés**
