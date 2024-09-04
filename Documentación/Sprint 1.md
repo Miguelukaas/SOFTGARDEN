@@ -39,9 +39,7 @@ ID (Primary Key)
 Nombre
 Fecha de nacimiento
 Datos adicionales (padres, grupo sanguíneo, etc.)
-
 Patrón de Sueño (sleep_pattern)
-
 ID (Primary Key)
 ID del Bebé (Foreign Key)
 Fecha
