@@ -93,7 +93,7 @@ Acceso para Médicos: Permitir a los médicos consultar la información relevant
 ------------
 
 
-Todos estos microservicios serán implementados en el lenguaje de programación Python y se tendrán que realizar de manera eficiente, eficaz y en tiempo y forma.
+Todos estos microservicios serán implementados en el lenguaje de programación Python y se tendrán que realizar de manera eficiente, eficaz, en tiempo y forma.
 
 **Gracias.**:smile:
 
