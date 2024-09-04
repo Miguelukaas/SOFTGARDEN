@@ -15,7 +15,11 @@ Cada integrante desarrollará un microservicio utilizando el lenguaje que sea de
 
 - **Microservicio de Alimentación Alejandro Esparza**
 
+------------
+
 - **Microservicio de Sueño Uriel Beltrán**
+
+------------
 
 - **Microservicio de Salud y Bienestar Lizbeth Cortés**
 
