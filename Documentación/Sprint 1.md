@@ -33,7 +33,7 @@ Crear una aplicación móvil o web que facilite a los padres la entrada de datos
 1. Base de Datos Relacional: Útil para llevar un registro detallado y estructurado de los patrones de sueño, con relaciones claras entre las entradas de sueño y el bebé correspondiente.
 
 
-2. Modelado de la Base de Datos
+2. Modelado de la Base de Datos:
 
     Bebé (baby)
     ID (Primary Key)
