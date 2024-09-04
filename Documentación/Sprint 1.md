@@ -14,7 +14,7 @@ Cada integrante desarrollará un microservicio utilizando el lenguaje que sea de
 ------------
 
 - **Microservicio de Alimentación Alejandro Esparza**
-  1. Base de Datos Relacional:
+1. Base de Datos Relacional:
 Utiliza una base de datos relacional para gestionar información estructurada relacionada con la alimentación del bebé, como registros de ingesta, horarios de comida, y preferencias alimenticias. Las tablas deben reflejar las conexiones entre distintos tipos de datos, como las comidas consumidas y los horarios de las tomas.
 
 2. Registro Manual:
