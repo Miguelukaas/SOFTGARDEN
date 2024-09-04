@@ -35,6 +35,22 @@ Crear una aplicación móvil o web que facilite a los padres la entrada de datos
 
 - **Microservicio de Salud y Bienestar Lizbeth Cortés**
 
+1-Registro de Información de Salud:
+Historia Médica: Registro de enfermedades previas, alergias, y condiciones médicas de cada niño.
+Vacunas: Seguimiento de vacunas administradas, fechas y próximas dosis necesarias.
+Medicamentos: Información sobre medicamentos que los niños deben tomar, horarios y dosis.
+
+2-Monitoreo de Salud Diaria:
+Temperatura y Síntomas: Registro de la temperatura corporal y síntomas como tos, dolor de estómago, etc.
+Observaciones de Bienestar: Notas sobre el estado general del niño, como cambios en el apetito o el estado de ánimo.
+
+3-Alertas y Notificaciones:
+Recordatorios de Medicación: Envío de notificaciones a los cuidadores y personal sobre los horarios de medicación alertas de Salud: Notificaciones en caso de fiebre alta, reacciones alérgicas, o si un niño muestra síntomas preocupantes.
+
+4- Informes para Padres: 
+Generación de informes y actualizaciones regulares sobre la salud de los niños.
+Acceso para Médicos: Permitir a los médicos consultar la información relevante con el consentimiento de los padres.
+
 ------------
 
 
