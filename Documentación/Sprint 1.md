@@ -14,6 +14,18 @@ Cada integrante desarrollará un microservicio utilizando el lenguaje que sea de
 ------------
 
 - **Microservicio de Alimentación Alejandro Esparza**
+  1. Base de Datos Relacional:
+Utiliza una base de datos relacional para gestionar información estructurada relacionada con la alimentación del bebé, como registros de ingesta, horarios de comida, y preferencias alimenticias. Las tablas deben reflejar las conexiones entre distintos tipos de datos, como las comidas consumidas y los horarios de las tomas.
+
+2. Registro Manual:
+Implementa una aplicación móvil o web que permita a los padres ingresar manualmente detalles sobre la alimentación y el estado del bebé, como si ha comido, si está despierto o dormido. Estos registros pueden ser enviados a una API para su almacenamiento y análisis posterior.
+
+3. Desarrollo del Backend:
+Desarrolla el backend del microservicio utilizando frameworks en Python. Este backend debe ser capaz de recibir datos desde dispositivos de seguimiento o entradas manuales, procesarlos y almacenarlos en la base de datos relacional para su gestión y análisis.
+
+4. Aplicación para Padres:
+Crea una aplicación móvil o web que facilite a los padres la entrada de datos sobre la alimentación y el estado del bebé. La aplicación debe permitir una interfaz intuitiva para registrar la información y sincronizarla con el backend del microservicio.
+
 
 ------------
 
