@@ -9,7 +9,7 @@ Cada integrante desarrollará un microservicio utilizando el lenguaje que sea de
 
 3. Backend: Utilizar un framework como Flask o FastAPI en Python para crear el backend del microservicio. Este servicio puede recibir datos de dispositivos o entradas manuales y almacenarlos en una base de datos.
 
-4. Desarrolla una aplicación móvil/web para que los padres ingresen el estado del bebé.
+4. Desarrollar una aplicación móvil/web para que los padres ingresen el estado del bebé.
 
 ------------
 
@@ -24,7 +24,7 @@ Implementa una aplicación móvil o web que permita a los padres ingresar manual
 Desarrolla el backend del microservicio utilizando frameworks en Python. Este backend debe ser capaz de recibir datos desde dispositivos de seguimiento o entradas manuales, procesarlos y almacenarlos en la base de datos relacional para su gestión y análisis.
 
 4. Aplicación para Padres:
-Crea una aplicación móvil o web que facilite a los padres la entrada de datos sobre la alimentación y el estado del bebé. La aplicación debe permitir una interfaz intuitiva para registrar la información y sincronizarla con el backend del microservicio.
+Crear una aplicación móvil o web que facilite a los padres la entrada de datos sobre la alimentación y el estado del bebé. La aplicación debe permitir una interfaz intuitiva para registrar la información y sincronizarla con el backend del microservicio.
 
 
 ------------
