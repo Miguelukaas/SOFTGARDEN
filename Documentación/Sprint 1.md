@@ -35,8 +35,8 @@ Crear una aplicación móvil o web que facilite a los padres la entrada de datos
 
 2. Modelado de la Base de Datos
 
-Bebé (baby)
-ID (Primary Key)
+    Bebé (baby)
+    ID (Primary Key)
 Nombre
 Fecha de nacimiento
 Datos adicionales (padres, grupo sanguíneo, etc.)
