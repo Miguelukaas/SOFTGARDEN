@@ -1,0 +1,1 @@
+Para ejecutar este código se necesita descargar los archivos incluidos y a la vez en su entorno se necesita crear el entorno virtual para instalar el requirements.txt el cual va a instalar todas las dependencias que se usaron hasta el momento.
