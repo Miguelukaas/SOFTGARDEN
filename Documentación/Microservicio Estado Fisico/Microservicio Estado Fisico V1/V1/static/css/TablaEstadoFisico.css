@@ -1,0 +1,36 @@
+/* Estilos generales de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: auto; /* Las celdas se adaptan al contenido */
+  }
+  
+  /* Estilos para las celdas y encabezados */
+  th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    word-wrap: break-word; /* El texto se ajusta al ancho de la celda */
+    max-width: 300px; /* Limita el ancho de las celdas para no desbordar el contenido */
+  }
+  
+  /* Estilo para el encabezado de la tabla */
+  th {
+    background-color: #f2f2f2;
+    word-wrap: break-word; /* Asegura que los encabezados se ajusten al contenido */
+  }
+  
+  /* Estilos para los botones en las celdas */
+  button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  }
+  
+  /* Estilo para el botón al hacer clic */
+  .clicked {
+    background-color: green; /* Color de fondo al hacer clic */
+    color: white; /* Color de texto al hacer clic */
+  }
+  
