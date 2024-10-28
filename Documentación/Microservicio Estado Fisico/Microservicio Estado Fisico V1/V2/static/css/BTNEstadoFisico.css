@@ -1,0 +1,11 @@
+/* Estilo adicional para alinear los botones horizontalmente */
+.dropdown-inline {
+    display: inline-block;
+    margin-right: 15px; /* Espacio entre los botones */
+  }
+  
+  /* Estilo para el botón de enviar */
+  #send-selection-container {
+    margin-top: 20px; /* Espacio superior para separar del grupo de botones */
+  }
+  
