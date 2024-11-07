@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enviar Notificación</title>
+</head>
+<body>
+    <h1>Enviar Notificación a los Padres</h1>
+    <form action="{{ url_for('main.enviar') }}" method="post">
+        <label for="id_nino">Seleccionar Niño:</label>
+        <select name="id_nino" id="id_nino" required>
+            {% for nino in ninos %}
+                <option value="{{ nino['id'] }}">{{ nino['nombre'] }}</option>
+            {% endfor %}
+        </select>
+        <br><br>
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" required></textarea>
+        <br><br>
+        <button type="submit">Enviar Notificación</button>
+    </form>
+</body>
+</html>
