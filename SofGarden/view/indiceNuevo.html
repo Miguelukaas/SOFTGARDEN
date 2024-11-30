@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>ADMINISTRADOR</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,600,700&display=swap" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="/">
+            <img src="/static/images/LOGOTIPOSOFTGARDEN.png" alt="Logotipo de SoftGarden" href="/">
+            <span style="color: black;">
+              SOFTGARDEN
+            </span>
+          </a>
+
+          <div class="navbar-collapse" id="">
+            <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                
+              </ul>
+              <form class="form-inline my-2 mb-3 mb-lg-0  mr-5">
+                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+              </form>
+            </div>
+
+            <div class="custom_menu-btn">
+              <button onclick="openNav()">
+                <span class="s-1">
+
+                </span>
+                <span class="s-2">
+
+                </span>
+                <span class="s-3">
+
+                </span>
+              </button>
+            </div>
+            <div id="myNav" class="overlay">
+              <div class="overlay-content">
+                <a href="/login">Cerrar Sesión</a>
+
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+
+  </div>
+
+
+    
+  <div class="container mt-5 text-center">
+    <h1 class="mb-4">Índice de Administrador</h1>
+    <p>Selecciona una opción para navegar a una sección específica:</p>
+
+    <!-- Botones de Navegación -->
+    <div class="btn-group-vertical">
+      <a href="/admin" class="btn btn-primary mb-2">Administración</a>
+      <a href="/estadofisico" class="btn btn-secondary mb-2">Estado Físico</a>
+      <a href="/alimentacion" class="btn btn-success mb-2">Alimentación</a>
+      <a href="/menu_usuario" class="btn btn-danger mb-2">Menú Seleccionado</a>
+      <a href="/carnetUsuario" class="btn btn-info mb-2">Carnet Usuario</a>
+      <a href="/sueno" class="btn btn-dark">Sueño</a>
+    </div>
+  </div>
+    
+  </div>
+
+  </section>
+
+  
+
+  <!-- end info section -->
+  <hr class="footer_hr">
+  <!-- footer section -->
+  <section class="container-fluid footer_section">
+    <p>&copy; 2024 SoftGarden. Todos los derechos reservados.</p>
+    <p>
+     SoftGarden&#174; 
+    </p>
+  </section>
+  <!-- footer section -->
+
+  <script type="text/javascript" src="/static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="/static/js/bootstrap.js"></script>
+
+
+
+  <script>
+    function openNav() {
+      document.getElementById("myNav").classList.toggle("menu_width")
+      document.querySelector(".custom_menu-btn").classList.toggle("menu_btn-style")
+    }
+  </script>
+
+<script>
+  // Función para hacer la solicitud AJAX y cambiar el valor de ACTIVO en la base de datos
+  function actualizarMenu(menuId) {
+    $.ajax({
+      url: '/cambiar_activo',  // Ruta que se manejará en Flask
+      method: 'POST',
+      data: { menu_id: menuId },  // Enviamos el ID del menú
+      success: function(response) {
+        alert(response);  // Muestra el mensaje de éxito
+      },
+      error: function(error) {
+        alert("Hubo un error al actualizar el menú.");
+      }
+    });
+  }
+</script>
+
+
+</body>
+
+</html>

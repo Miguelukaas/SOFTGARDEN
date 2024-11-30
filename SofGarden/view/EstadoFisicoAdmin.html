@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Estado Físico - Admin</title>
+  <link rel="stylesheet" href="/static/css/TablaEstadoFisico.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link type="text/css" href="/static/css/bootstrap.css" rel="stylesheet" />
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+  <link href="/static/css/BTNEstadoFisico.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="home.html">
+            <img src="/static/images/LOGOTIPOSOFTGARDEN.png" alt="Logotipo de SoftGarden">
+            <span style="color: black;">SOFTGARDEN</span>
+          </a>
+          <div class="navbar-collapse" id="">
+            <div class="d-none d-lg-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="login.html">
+                    <img src="static/images/login.png" alt="" />
+                    <span>Login</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="microservicio_estadofisico">
+    <div class="container">
+      <h1>Estado Físico - Admin</h1>
+
+      <!-- Botones estáticos para actividades -->
+      <div class="button-container">
+        <button class="button" onclick="actualizarActividad(1)">Juego: Interacciones de juego con objetos.</button>
+        <button class="button" onclick="actualizarActividad(2)">Tranquilo/Quieto: El bebé está despierto pero tranquilo.</button>
+        <button class="button" onclick="actualizarActividad(3)">Pañal Limpio: El bebé tiene un pañal limpio y seco.</button>
+        <button class="button" onclick="actualizarActividad(4)">Pañal Sucio: El bebé necesita un cambio inmediato.</button>
+        <button class="button" onclick="actualizarActividad(5)">Contento/Feliz: El bebé está sonriendo y balbuceando.</button>
+        <button class="button" onclick="actualizarActividad(6)">Irritable/Molesto: El bebé está llorando y muestra incomodidad.</button>
+
+      </div>
+      
+    
+  </section>
+
+  <hr class="footer_hr">
+  <section class="container-fluid footer_section">
+    <p>&copy; 2024 All Rights Reserved. Design by Miguel Mora.</p>
+    <p>SoftGarden&#174;</p>
+    <p>Contacto: <a href="mailto:info@softgarden.com">info@softgarden.com</a></p>
+  </section>
+
+  <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  <script>
+
+    function actualizarActividad(activityId) {
+    fetch('/actualizar_actividad', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: new URLSearchParams({ 'activity_id': activityId }) // Envia el ID como parámetro
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log("Actividad actualizada");
+        } else {
+            console.error("Error al actualizar la actividad");
+        }
+    })
+    .catch(error => console.error('Error:', error));
+
+//cambio de colores de los botones
+const buttons = document.querySelectorAll('.button');
+    buttons.forEach(button => {
+        button.classList.remove('active'); // Elimina la clase 'active' de todos los botones
+    });
+
+    // Agrega la clase 'active' al botón actual
+    const currentButton = event.target; // Obtener el botón que fue clicado
+    currentButton.classList.add('active');
+  }
+  </script>
+</body>
+</html>

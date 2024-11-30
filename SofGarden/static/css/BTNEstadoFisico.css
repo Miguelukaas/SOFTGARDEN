@@ -1,0 +1,30 @@
+
+
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Asegúrate de que los botones estén en una columna */
+    align-items: center; /* Centramos los botones */
+    gap: 15px; /* Espacio entre los botones */
+    margin-top: 20px; /* Espacio superior
+     */
+  }
+  /* Estilo para los botones */
+.button {
+  background-color: green; /* Color de fondo verde */
+  color: white; /* Color del texto blanco */
+  border: none; /* Sin borde */
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center; /* Alinear el texto al centro */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Hacer que los botones se comporten como bloques en línea */
+  font-size: 16px; /* Tamaño de la fuente */
+  cursor: pointer; /* Cambia el cursor a mano al pasar sobre el botón */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+/* Estilo para cuando el botón está activo (seleccionado) */
+.button.active {
+  background-color: blue; /* Cambia a color de fondo azul */
+}
+
+  

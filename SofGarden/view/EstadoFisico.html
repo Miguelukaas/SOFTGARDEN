@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Estado Físico - Usuario</title>
+  <link rel="stylesheet" href="/static/css/TablaEstadoFisico.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="home.html">
+            <img src="/static/images/LOGOTIPOSOFTGARDEN.png" alt="Logotipo de SoftGarden" href="home.html">
+            <span style="color: black;">SOFTGARDEN</span>
+          </a>
+        </nav>
+      </div>
+    </header>
+  </div>
+
+  <section class="microservicio_estadofisico">
+    <div class="container">
+      <h1>Estado Físico - Usuario</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Actividad</th>
+            <th>Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="col-actividad"><strong>&#9654;  ACTIVIDAD:</strong></td>
+            <td class="col-nombre">{{ actividad1 }}</td>
+          </tr>
+          <tr>
+            <td class="col-actividad"><strong>&#9654;  CAMBIO DE PAÑAL:</strong></td>
+            <td class="col-nombre">{{ actividad2 }}</td>
+          </tr>
+          <tr>
+            <td class="col-actividad"><strong>&#9654;  ESTADO EMOCIONAL:</strong></td>
+            <td class="col-nombre">{{ actividad3 }}</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </section>
+
+  <hr class="footer_hr">
+  <section class="container-fluid footer_section">
+    <p>&copy; 2024 All Rights Reserved.</p>
+    <p>SoftGarden&#174;</p>
+    <p>Contacto: <a href="mailto:info@softgarden.com">info@softgarden.com</a></p>
+  </section>
+
+  <script type="text/javascript" src="static/js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="static/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.0/socket.io.js"></script>
+
+
+</body>
+</html>
